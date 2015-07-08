@@ -4,7 +4,8 @@ if has('vim_starting')
 endif
 call neobundle#begin(expand('~/.vim/bundle'))
 NeoBundleFetch 'Shougo/neobundle.vim'
-NeoBundle 'vim-jp/vimdoc-ja.git'
+NeoBundle 'vim-jp/vimdoc-ja'
+NeoBundle 'w0ng/vim-hybrid'
 NeoBundleCheck
 call neobundle#end()
 " タブインデント
@@ -15,5 +16,5 @@ set smartindent
 filetype on
 " 検索語句のマークをクリア
 nnoremap <silent> <C-L> :noh<C-L><CR>
-" シンタックス
-syntax on
+" 色付け
+colorscheme hybrid
