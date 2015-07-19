@@ -18,3 +18,4 @@ filetype plugin on
 nnoremap <silent> <C-L> :noh<C-L><CR>
 " 色付け
 colorscheme hybrid
+syntax enable
