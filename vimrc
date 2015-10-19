@@ -17,5 +17,6 @@ filetype plugin on
 " 検索語句のマークをクリア
 nnoremap <silent> <C-L> :noh<C-L><CR>
 " 色付け
+set background=dark
 colorscheme hybrid
 syntax enable
