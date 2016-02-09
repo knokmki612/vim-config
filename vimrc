@@ -16,6 +16,8 @@ set smartindent
 filetype plugin on
 " 検索語句のマークをクリア
 nnoremap <silent> <C-L> :noh<C-L><CR>
+" ヤンク時にクリップボードにもコピー
+set clipboard=unnamed,autoselect
 " 色付け
 set background=dark
 colorscheme hybrid
