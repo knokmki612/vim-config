@@ -21,3 +21,5 @@ set clipboard=unnamed,autoselect
 set background=dark
 colorscheme hybrid
 syntax enable
+" swpファイルの出力先変更
+set directory=~/.vim
