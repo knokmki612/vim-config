@@ -3,7 +3,6 @@ if has('vim_starting')
 	set runtimepath+=~/.vim/bundle/dein.vim
 endif
 call dein#begin(expand('~/.vim/bundle'))
-call dein#add('Shougo/dein.vim')
 call dein#add('vim-jp/vimdoc-ja')
 call dein#add('w0ng/vim-hybrid')
 call dein#end()
