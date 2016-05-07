@@ -17,6 +17,9 @@ nnoremap <silent> <C-L> :noh<C-L><CR>
 " ヤンク時にクリップボードにもコピー
 set clipboard=unnamed,autoselect
 " 色付け
+if &t_Co < 256
+	set t_Co=256
+endif
 set background=dark
 colorscheme hybrid
 syntax enable
