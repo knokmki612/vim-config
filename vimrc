@@ -10,7 +10,11 @@ call dein#end()
 set tabstop=2
 set shiftwidth=2
 set smartindent
-" ファイル種別にインデント切り替え
+" 文字エンコード関係
+set fileencoding=utf-8
+set fileencodings=utf-8,sjis,euc-jp,iso-2022-jp
+set encoding=utf-8
+" ファイル種別の設定が出来るようにした
 filetype plugin on
 " 検索語句のマークをクリア
 nnoremap <silent> <C-L> :noh<C-L><CR>
