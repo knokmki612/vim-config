@@ -1,11 +1,19 @@
 " dein.vim
-if has('vim_starting')
-	set runtimepath+=~/.vim/bundle/dein.vim
+if &compatible
+	set nocompatible
 endif
-call dein#begin(expand('~/.vim/bundle'))
-call dein#add('vim-jp/vimdoc-ja')
-call dein#add('w0ng/vim-hybrid')
-call dein#end()
+set runtimepath+=~/.vim/bundle/dein.vim
+if dein#load_state(expand('~/.vim/bundle'))
+	call dein#begin('~/.vim/bundle')
+	call dein#add('~/.vim/bundle/dein.vim')
+	call dein#add('vim-jp/vimdoc-ja')
+	call dein#add('w0ng/vim-hybrid')
+	call dein#end()
+	call dein#save_state()
+endif
+if dein#check_install()
+	call dein#install()
+endif
 " タブインデント
 set tabstop=2
 set shiftwidth=2
