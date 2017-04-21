@@ -26,6 +26,8 @@ set encoding=utf-8
 filetype plugin on
 " 検索語句のマークをクリア
 nnoremap <silent> <C-L> :noh<C-L><CR>
+" 検索時にハイライトする
+set hlsearch
 " ヤンク時にクリップボードにもコピー
 set clipboard=unnamed,autoselect
 " 色付け
