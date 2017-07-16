@@ -6,6 +6,7 @@ if dein#load_state(expand('~/.vim/bundle'))
 	call dein#add('vim-jp/vimdoc-ja')
 	call dein#add('w0ng/vim-hybrid')
 	call dein#add('ajh17/VimCompletesMe')
+	call dein#add('cohama/lexima.vim')
 	call dein#end()
 	call dein#save_state()
 endif
