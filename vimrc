@@ -1,7 +1,4 @@
 " dein.vim
-if &compatible
-	set nocompatible
-endif
 set runtimepath+=~/.vim/bundle/dein.vim
 if dein#load_state(expand('~/.vim/bundle'))
 	call dein#begin('~/.vim/bundle')
