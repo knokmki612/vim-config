@@ -8,6 +8,7 @@ if dein#load_state(expand('~/.vim/bundle'))
 	call dein#add('ajh17/VimCompletesMe')
 	call dein#add('cohama/lexima.vim')
 	call dein#add('digitaltoad/vim-pug')
+	call dein#add('kewah/vim-stylefmt')
 	call dein#end()
 	call dein#save_state()
 endif
