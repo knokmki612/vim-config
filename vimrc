@@ -43,3 +43,9 @@ colorscheme hybrid
 syntax enable
 " swpファイルの出力先変更
 set directory=~/.vim
+" ファイルの再読み込み
+set autoread
+augroup vimrc
+	autocmd!
+	au CursorHold * checktime
+augroup END
