@@ -51,7 +51,9 @@ augroup END
 " Lint関係
 let g:ale_linters = {
 \	'javascript': ['eslint'],
+\	'scss': ['stylelint'],
 \}
 let g:ale_fixers = {
 \	'javascript': ['eslint'],
+\	'scss': ['stylelint'],
 \}
