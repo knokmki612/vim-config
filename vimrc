@@ -57,3 +57,4 @@ let g:ale_fixers = {
 \	'javascript': ['prettier', 'eslint'],
 \	'scss': ['prettier', 'stylelint'],
 \}
+let g:ale_fix_on_save = 1
