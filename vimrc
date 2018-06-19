@@ -9,7 +9,6 @@ if dein#load_state(expand('~/.vim/bundle'))
 	call dein#add('w0rp/ale')
 	call dein#add('editorconfig/editorconfig-vim')
 	call dein#add('digitaltoad/vim-pug')
-	call dein#add('prettier/vim-prettier')
 	call dein#end()
 	call dein#save_state()
 endif
@@ -55,6 +54,6 @@ let g:ale_linters = {
 \	'scss': ['stylelint'],
 \}
 let g:ale_fixers = {
-\	'javascript': ['eslint'],
-\	'scss': ['stylelint'],
+\	'javascript': ['prettier', 'eslint'],
+\	'scss': ['prettier', 'stylelint'],
 \}
