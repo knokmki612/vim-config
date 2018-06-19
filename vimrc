@@ -48,7 +48,7 @@ augroup vimrc
 	autocmd!
 	au CursorHold * checktime
 augroup END
-" Lint関係
+" Ale
 let g:ale_linters = {
 \	'javascript': ['eslint'],
 \	'scss': ['stylelint'],
