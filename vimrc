@@ -9,6 +9,7 @@ if dein#load_state(expand('~/.vim/bundle'))
 	call dein#add('w0rp/ale')
 	call dein#add('editorconfig/editorconfig-vim')
 	call dein#add('digitaltoad/vim-pug')
+	call dein#add('posva/vim-vue')
 	call dein#end()
 	call dein#save_state()
 endif
