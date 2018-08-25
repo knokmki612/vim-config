@@ -52,11 +52,12 @@ augroup END
 " Ale
 let g:ale_linters = {
 \	'javascript': ['eslint'],
+\	'vue': ['eslint'],
 \	'scss': ['stylelint'],
 \}
 let g:ale_fixers = {
 \	'javascript': ['eslint'],
+\	'vue': ['eslint'],
 \	'scss': ['prettier', 'stylelint'],
 \}
-let g:ale_linter_aliases = {'vue': 'javascript'}
 let g:ale_fix_on_save = 1
