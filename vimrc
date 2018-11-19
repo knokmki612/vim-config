@@ -1,8 +1,8 @@
 " dein.vim
-set runtimepath+=~/.vim/bundle/dein.vim
+set runtimepath+=~/.vim/bundle/repos/github.com/Shougo/dein.vim
 if dein#load_state(expand('~/.vim/bundle'))
 	call dein#begin('~/.vim/bundle')
-	call dein#add('~/.vim/bundle/dein.vim')
+	call dein#add('~/.vim/bundle/repos/github.com/Shougo/dein.vim')
 	call dein#add('vim-jp/vimdoc-ja')
 	call dein#add('w0ng/vim-hybrid')
 	call dein#add('cohama/lexima.vim')
