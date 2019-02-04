@@ -10,6 +10,7 @@ if dein#load_state(expand('~/.vim/bundle'))
 	call dein#add('editorconfig/editorconfig-vim')
 	call dein#add('digitaltoad/vim-pug')
 	call dein#add('posva/vim-vue')
+	call dein#add('leafgarland/typescript-vim')
 	call dein#end()
 	call dein#save_state()
 endif
@@ -52,11 +53,13 @@ augroup END
 " Ale
 let g:ale_linters = {
 \	'javascript': ['eslint'],
+\ 'typescript': ['tslint'],
 \	'vue': ['eslint'],
 \	'scss': ['stylelint'],
 \}
 let g:ale_fixers = {
 \	'javascript': ['eslint'],
+\ 'typescript': ['tslint'],
 \	'vue': ['eslint'],
 \	'scss': ['prettier', 'stylelint'],
 \}
