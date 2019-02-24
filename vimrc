@@ -54,14 +54,14 @@ augroup END
 " Ale
 let g:ale_linters = {
 \	'javascript': ['eslint'],
-\ 'typescript': ['tslint'],
+\	'typescript': ['tslint'],
 \	'vue': ['eslint'],
 \	'scss': ['stylelint'],
 \	'julia': ['languageserver'],
 \}
 let g:ale_fixers = {
 \	'javascript': ['eslint'],
-\ 'typescript': ['tslint'],
+\	'typescript': ['tslint'],
 \	'vue': ['eslint'],
 \	'scss': ['prettier', 'stylelint'],
 \}
