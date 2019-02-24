@@ -11,6 +11,7 @@ if dein#load_state(expand('~/.vim/bundle'))
 	call dein#add('digitaltoad/vim-pug')
 	call dein#add('posva/vim-vue')
 	call dein#add('leafgarland/typescript-vim')
+	call dein#add('JuliaEditorSupport/julia-vim')
 	call dein#end()
 	call dein#save_state()
 endif
@@ -56,6 +57,7 @@ let g:ale_linters = {
 \ 'typescript': ['tslint'],
 \	'vue': ['eslint'],
 \	'scss': ['stylelint'],
+\	'julia': ['languageserver'],
 \}
 let g:ale_fixers = {
 \	'javascript': ['eslint'],
