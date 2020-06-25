@@ -61,14 +61,14 @@ augroup END
 let g:ale_linters = {
   \ 'javascript': ['eslint'],
   \ 'typescript': ['eslint'],
-  \ 'vue': ['eslint'],
+  \ 'vue': ['eslint', 'stylelint'],
   \ 'scss': ['stylelint'],
   \ 'julia': ['languageserver'],
   \ }
 let g:ale_fixers = {
   \ 'javascript': ['eslint'],
   \ 'typescript': ['eslint'],
-  \ 'vue': ['eslint'],
+  \ 'vue': ['eslint', 'stylelint'],
   \ 'scss': ['stylelint'],
   \ }
 let g:ale_fix_on_save = 1
