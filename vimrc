@@ -72,3 +72,5 @@ let g:ale_fixers = {
   \ 'scss': ['stylelint'],
   \ }
 let g:ale_fix_on_save = 1
+" vim-lsp
+let g:lsp_diagnostics_echo_cursor = 1
