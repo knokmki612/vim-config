@@ -1,33 +1,24 @@
 " dein.vim
 set runtimepath+=~/.vim/dein/repos/github.com/Shougo/dein.vim
-if dein#load_state(expand('~/.vim/dein'))
-  call dein#begin('~/.vim/dein')
-  call dein#add('~/.vim/dein/repos/github.com/Shougo/dein.vim')
-  call dein#add('vim-jp/vimdoc-ja')
-  call dein#add('w0ng/vim-hybrid')
-  call dein#add('cohama/lexima.vim')
-  call dein#add('editorconfig/editorconfig-vim')
-  call dein#add('JuliaEditorSupport/julia-vim')
-  call dein#add('leafgarland/typescript-vim')
-  call dein#add('posva/vim-vue')
-  call dein#add('w0rp/ale')
-  call dein#add('prabirshrestha/async.vim')
-  call dein#add('prabirshrestha/asyncomplete.vim')
-  call dein#add('prabirshrestha/asyncomplete-lsp.vim')
-  call dein#add('prabirshrestha/vim-lsp')
-  call dein#add('mattn/vim-lsp-settings')
+let s:dein_dir = '~/.vim/dein'
+if dein#load_state(s:dein_dir)
+  call dein#begin(s:dein_dir)
+  call dein#load_toml('~/.vim/dein.toml')
+  call dein#load_toml('~/.vim/dein_lazy.toml', { 'lazy': 1 })
   call dein#end()
   call dein#save_state()
 endif
 if dein#check_install()
   call dein#install()
 endif
-" localvimrc
-let g:localvimrc_ask=0
+let s:dein_non_used_plugins = dein#check_clean()
+if len(s:dein_non_used_plugins) > 0
+  call map(s:dein_non_used_plugins, "delete(v:val, 'rf')")
+  call dein#recache_runtimepath()
+endif
 " タブインデント
-set tabstop=2
-set shiftwidth=2
 set smartindent
+inoremap <S-Tab> <C-d>
 " 文字エンコード関係
 set fileencoding=utf-8
 set fileencodings=utf-8,sjis,euc-jp,iso-2022-jp
@@ -57,20 +48,3 @@ augroup vimrc
   autocmd!
   au CursorHold * checktime
 augroup END
-" Ale
-let g:ale_linters = {
-  \ 'javascript': ['eslint'],
-  \ 'typescript': ['eslint'],
-  \ 'vue': ['eslint', 'stylelint'],
-  \ 'scss': ['stylelint'],
-  \ 'julia': ['languageserver'],
-  \ }
-let g:ale_fixers = {
-  \ 'javascript': ['eslint'],
-  \ 'typescript': ['eslint'],
-  \ 'vue': ['eslint', 'stylelint'],
-  \ 'scss': ['stylelint'],
-  \ }
-let g:ale_fix_on_save = 1
-" vim-lsp
-let g:lsp_diagnostics_echo_cursor = 1
