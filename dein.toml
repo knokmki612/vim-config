@@ -22,6 +22,7 @@ repo = 'posva/vim-vue'
 [[plugins]]
 repo = 'neoclide/coc.nvim'
 rev = 'release'
+merged = 0
 hook_add = '''
   let g:coc_disable_startup_warning = 1
   command! -nargs=0 Prettier :CocCommand prettier.formatFile
