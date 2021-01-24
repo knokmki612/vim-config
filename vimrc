@@ -31,8 +31,6 @@ set backupcopy=yes
 nnoremap <silent> <C-L> :noh<C-L><CR>
 " 検索時にハイライトする
 set hlsearch
-" ヤンク時にクリップボードにもコピー
-set clipboard=unnamed,autoselect
 " 色付け
 if &t_Co < 256
   set t_Co=256
