@@ -16,6 +16,15 @@ if len(s:dein_non_used_plugins) > 0
   call map(s:dein_non_used_plugins, "delete(v:val, 'rf')")
   call dein#recache_runtimepath()
 endif
+" coc.nvim
+let g:coc_global_extensions = [
+  \ '@yaegassy/coc-volar',
+  \ 'coc-eslint',
+  \ 'coc-json',
+  \ 'coc-prettier',
+  \ 'coc-tsserver',
+  \ 'coc-yaml'
+\ ]
 " タブインデント
 set smartindent
 inoremap <S-Tab> <C-d>
