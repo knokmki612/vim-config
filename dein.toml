@@ -8,18 +8,6 @@ repo = 'w0ng/vim-hybrid'
 repo = 'editorconfig/editorconfig-vim'
 
 [[plugins]]
-repo = 'JuliaEditorSupport/julia-vim'
-
-[[plugins]]
-repo = 'leafgarland/typescript-vim'
-
-[[plugins]]
-repo = 'cespare/vim-toml'
-
-[[plugins]]
-repo = 'posva/vim-vue'
-
-[[plugins]]
 repo = 'neoclide/coc.nvim'
 rev = 'release'
 merged = 0

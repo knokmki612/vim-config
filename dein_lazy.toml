@@ -3,4 +3,3 @@ repo = 'vim-jp/vimdoc-ja'
 
 [[plugins]]
 repo = 'cohama/lexima.vim'
-on_i = 1
