@@ -23,7 +23,8 @@ let g:coc_global_extensions = [
   \ 'coc-json',
   \ 'coc-prettier',
   \ 'coc-tsserver',
-  \ 'coc-yaml'
+  \ 'coc-yaml',
+  \ 'coc-deno'
 \ ]
 " タブインデント
 set smartindent
